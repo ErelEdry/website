@@ -121,27 +121,27 @@ function Features() {
           <p className="text-primary/60 max-w-2xl mx-auto">מרימה את המיתוג האישי לרמות של אדיטוריאל.</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8">
+        <div className="grid grid-cols-3 gap-3 md:gap-8">
           {/* Card 1 (Far Right in RTL): Luxurious Editorial Style + Image 3 */}
-          <div className="feature-card flex flex-col gap-6">
-            <h3 className="font-sans font-semibold text-xl md:text-2xl text-primary text-center"></h3>
-            <div className="relative h-[450px] md:h-[550px] w-full bg-surface rounded-ui border border-primary/5 shadow-sm overflow-hidden group">
+          <div className="feature-card flex flex-col gap-2 md:gap-6">
+            <h3 className="font-sans font-semibold text-xs sm:text-sm md:text-2xl text-primary text-center"></h3>
+            <div className="relative aspect-[3/4] md:aspect-[4/5] w-full bg-surface rounded-xl md:rounded-ui border border-primary/5 shadow-sm overflow-hidden group">
               <img src="/images/photos/9548CFE2-FD5E-4580-AE84-ACDCCBE35FA2.JPEG" alt="סטייל אדיטוריאל יוקרתי" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-105" />
             </div>
           </div>
 
           {/* Card 2 (Center RTL): Personalized Creative Vision + Image 2 */}
-          <div className="feature-card flex flex-col gap-6">
-            <h3 className="font-sans font-semibold text-xl md:text-2xl text-primary text-center"></h3>
-            <div className="relative h-[450px] md:h-[550px] w-full bg-surface rounded-ui border border-primary/5 shadow-sm overflow-hidden group">
+          <div className="feature-card flex flex-col gap-2 md:gap-6">
+            <h3 className="font-sans font-semibold text-xs sm:text-sm md:text-2xl text-primary text-center"></h3>
+            <div className="relative aspect-[3/4] md:aspect-[4/5] w-full bg-surface rounded-xl md:rounded-ui border border-primary/5 shadow-sm overflow-hidden group">
               <img src="/images/photos/E6D07AD9-0EA9-41BA-A875-4A21DAEBF43E.jpg" alt="חזון קריאטיבי מותאם אישית" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-105" />
             </div>
           </div>
 
           {/* Card 3 (Far Left in RTL): Exquisite Retouching + Image 1 */}
-          <div className="feature-card flex flex-col gap-6">
-            <h3 className="font-sans font-semibold text-xl md:text-2xl text-primary text-center"></h3>
-            <div className="relative h-[450px] md:h-[550px] w-full bg-surface rounded-ui border border-primary/5 shadow-sm overflow-hidden group">
+          <div className="feature-card flex flex-col gap-2 md:gap-6">
+            <h3 className="font-sans font-semibold text-xs sm:text-sm md:text-2xl text-primary text-center"></h3>
+            <div className="relative aspect-[3/4] md:aspect-[4/5] w-full bg-surface rounded-xl md:rounded-ui border border-primary/5 shadow-sm overflow-hidden group">
               <img src="/images/photos/IMG_1740.JPG" alt="ריטוש מופתי" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-105" />
             </div>
           </div>
@@ -318,9 +318,9 @@ function Portfolio() {
     <section id="portfolio" className="py-32 bg-background px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-serif text-primary mb-16 text-center">עבודות נבחרות</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-2 md:gap-6">
           {images.map((src, i) => (
-            <div key={i} className="relative group overflow-hidden bg-primary/5 rounded-2xl aspect-[4/5] md:aspect-square">
+            <div key={i} className="relative group overflow-hidden bg-primary/5 rounded-lg md:rounded-2xl aspect-square">
               <img
                 src={src}
                 className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-[1.05]"
