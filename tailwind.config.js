@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#FAF8F5',   // Warm Ivory
+        background: '#FFF0F5',   // Light Pink override
         surface: '#FDFBF7',      // Cream
         primary: '#1A1A1A',      // Elegant Muted Black / Obsidian base
         accent: '#B76E79',       // Rose Gold
