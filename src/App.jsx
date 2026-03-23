@@ -323,21 +323,37 @@ function TabbedGallery() {
 // --- F. PORTFOLIO GRID ---
 function Portfolio({ setSelectedImage }) {
   const images = [
-    "/images/photos/27AAE382-CE62-4161-9F91-159448A08D1A.JPEG",
-    "/images/photos/123f.JPEG",
+    "/images/photos/9548CFE2-FD5E-4580-AE84-ACDCCBE35FA2.JPEG",
+    "/images/photos/A2A54CB2-5FE1-43F0-B38A-CBE0F71CD601.jpeg",
     "/images/photos/IMG_2109.JPG",
-    "/images/photos/IMG_9722.JPG",
-    "/images/photos/537EC874-78AA-47F4-9BF6-4BFF0D59788D.jpeg",
-    "/images/photos/IMG_4610.JPG",
+    "/images/photos/2C8751F7-E1A0-46E3-9AA7-0CE24D3C09E7.JPEG",
+    "/images/photos/WhatsApp Image 2026-03-23 at 19.53.46.jpeg",
+    "/images/photos/985DBE58-9B07-47A1-90B0-986D87B32EE5.JPEG",
+    "/images/photos/D3938F98-5E9D-4FF6-A9AA-7226623ADB48.JPG",
+    "/images/photos/C472C53E-88F5-4AF9-B9B5-9E5F4B2B72F5.JPEG",
+    "/images/photos/DSC_0276.JPG",
+    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.36 (1).jpeg",
     "/images/photos/IMG_7562.JPG",
-    "/images/photos/IMG_4467.JPG",
-    "/images/photos/IMG_8724.JPG"
+    "/images/photos/IMG_8724.JPG",
+    "/images/photos/627B09CA-1AFD-4665-96FF-76C52347B2A0.JPEG",
+    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.38 (2).jpeg",
+    "/images/photos/537EC874-78AA-47F4-9BF6-4BFF0D59788D.jpeg",
+    "/images/photos/IMG_1721.JPG",
+    "/images/photos/IMG_4610.JPG",
+    "/images/photos/IMG_4370.JPG",
+    "/images/photos/IMG_9722.JPG",
+    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.37.jpeg",
+    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (1).jpeg",
+    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (2).jpeg",
+    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.36.jpeg",
+    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (5).jpeg",
+
   ];
 
   return (
     <section id="portfolio" className="py-32 bg-background px-1 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-serif text-primary mb-16 text-center px-4 md:px-0">עבודות נבחרות</h2>
+        <h2 className="text-4xl md:text-5xl font-Calibri text-primary mb-16 text-center px-4 md:px-0">העבודות שלי</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-8">
           {images.map((src, i) => (
             <div
@@ -401,79 +417,89 @@ function Contact() {
 
   return (
     <section id="contact" className="py-32 bg-[#FFF0F5] px-6 md:px-12 border-t border-primary/10">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-16">
-        <div className="md:w-1/2">
-          <h2 className="text-4xl md:text-5xl font-serif text-primary mb-6">קבעי סשן צילומים</h2>
-          <p className="text-primary/70 mb-12">היכנסי לפריים. צרי קשר כדי לדון בקונספטים, זמינות וחבילות צילום.</p>
+      <div className="max-w-4xl mx-auto">
 
-          <div className="space-y-6 mb-12">
-            <div className="flex items-center gap-4 text-primary/80">
-              <Mail className="w-5 h-5 text-accent" />
-              <span className="font-mono text-sm">carinegarber2005@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-4 text-primary/80">
-              <Phone className="w-5 h-5 text-accent" />
-              <span className="font-mono text-sm" dir="ltr">052-4481941</span>
-            </div>
-          </div>
-
-          {/* Social / Communication Row */}
-          <div className="flex items-center gap-4">
-            <a href="https://wa.me/972524481941?text=%D7%94%D7%99%D7%99%20%D7%A0%D7%A2%D7%99%D7%9D%20%D7%9E%D7%90%D7%95%D7%93!%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9E%D7%90%D7%95%D7%93%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D%20%3A%29" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary/80 hover:bg-accent hover:text-white hover:border-accent transition-all duration-300" aria-label="WhatsApp">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/carine__photography/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary/80 hover:bg-accent hover:text-white hover:border-accent transition-all duration-300" aria-label="Instagram">
-              <Instagram className="w-5 h-5" />
-            </a>
-          </div>
+        {/* Centered Symmetrical Header */}
+        <div className="text-center mb-16 md:mb-20">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif text-primary tracking-wide drop-shadow-sm" dir="ltr" style={{ fontWeight: 300, fontFamily: "'Quicksand', sans-serif" }}>
+            Let's talk!
+          </h2>
+          <div className="w-16 h-[1px] bg-primary/20 mx-auto mt-8"></div>
         </div>
 
-        <div className="md:w-1/2">
-          <form className="space-y-6" onSubmit={handleSubmit}>
-            {/* Spam Protection & Config */}
-            <input type="text" name="_honey" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_subject" value="כניסה חדשה מהאתר - קארין גרבר" />
-            <input type="hidden" name="_template" value="table" />
+        {/* Content Columns perfectly balanced */}
+        <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-center">
 
-            <div className="grid grid-cols-2 gap-6">
-              <div className="flex flex-col">
-                <label className="text-xs font-medium uppercase tracking-wider text-primary/60 mb-2">שם מלא</label>
-                <input type="text" name="name" required className="bg-white border-b border-primary/20 p-3 focus:outline-none focus:border-accent text-primary transition-colors placeholder:text-primary/30 rounded-t-md" placeholder="" />
+          <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-right">
+            <div className="space-y-6 mb-12 w-full flex flex-col items-center md:items-start">
+              <div className="flex items-center gap-4 text-primary/80">
+                <Mail className="w-6 h-6 text-accent" />
+                <span className="font-mono text-base">carinegarber2005@gmail.com</span>
               </div>
-              <div className="flex flex-col">
-                <label className="text-xs font-medium uppercase tracking-wider text-primary/60 mb-2">אימייל</label>
-                <input type="email" name="email" required className="bg-white border-b border-primary/20 p-3 focus:outline-none focus:border-accent text-primary transition-colors placeholder:text-primary/30 rounded-t-md" placeholder="" dir="ltr" />
+              <div className="flex items-center gap-4 text-primary/80">
+                <Phone className="w-6 h-6 text-accent" />
+                <span className="font-mono text-base tracking-widest" dir="ltr">052-4481941</span>
               </div>
             </div>
-            <div className="flex flex-col">
-              <label className="text-xs font-medium uppercase tracking-wider text-primary/60 mb-2">מספר טלפון</label>
-              <input type="tel" name="phone" className="bg-white border-b border-primary/20 p-3 focus:outline-none focus:border-accent text-primary transition-colors placeholder:text-primary/30 rounded-t-md" placeholder="" dir="ltr" />
-            </div>
-            <div className="flex flex-col">
-              <label className="text-xs font-medium uppercase tracking-wider text-primary/60 mb-2">הודעה</label>
-              <textarea name="message" required rows="4" className="bg-white border-b border-primary/20 p-3 focus:outline-none focus:border-accent text-primary transition-colors resize-none placeholder:text-primary/30 rounded-t-md" placeholder="פרטים על החזון שלך..."></textarea>
-            </div>
 
-            <button
-              type="submit"
-              disabled={cooldown > 0 || status === 'submitting'}
-              className={`w-full py-4 rounded-xl font-medium tracking-wide flex justify-center items-center gap-2 transition-colors ${cooldown > 0 || status === 'submitting'
-                ? 'bg-primary/50 cursor-not-allowed text-white/50'
-                : 'magnetic-btn bg-primary text-white hover:bg-black'
-                }`}
-            >
-              {status === 'submitting' && 'שולח...'}
-              {status === 'success' && 'נשלח בהצלחה! תודה'}
-              {status === 'error' && 'שגיאה. נסה/י שוב'}
-              {status === 'idle' && cooldown > 0 && `המתן ${cooldown} שניות`}
-              {status === 'idle' && cooldown === 0 && (
-                <>שליחה <ArrowUpLeft className="w-4 h-4" /></>
-              )}
-            </button>
-          </form>
+            {/* Social / Communication Row */}
+            <div className="flex items-center justify-center md:justify-start gap-6 w-full">
+              <a href="https://wa.me/972524481941?text=%D7%94%D7%99%D7%99%20%D7%A0%D7%A2%D7%99%D7%9D%20%D7%9E%D7%90%D7%95%D7%93!%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9E%D7%90%D7%95%D7%93%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D%20%3A%29" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full border border-primary/20 flex items-center justify-center text-primary/80 hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 shadow-sm" aria-label="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/carine__photography/" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full border border-primary/20 flex items-center justify-center text-primary/80 hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 shadow-sm" aria-label="Instagram">
+                <Instagram className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
+
+          <div className="w-full md:w-1/2">
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              {/* Spam Protection & Config */}
+              <input type="text" name="_honey" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="כניסה חדשה מהאתר - קארין גרבר" />
+              <input type="hidden" name="_template" value="table" />
+
+              <div className="grid grid-cols-2 gap-6">
+                <div className="flex flex-col">
+                  <label className="text-xs font-medium uppercase tracking-wider text-primary/60 mb-2">שם מלא</label>
+                  <input type="text" name="name" required className="bg-white border-b border-primary/20 p-3 focus:outline-none focus:border-accent text-primary transition-colors placeholder:text-primary/30 rounded-t-md" placeholder="" />
+                </div>
+                <div className="flex flex-col">
+                  <label className="text-xs font-medium uppercase tracking-wider text-primary/60 mb-2">אימייל</label>
+                  <input type="email" name="email" required className="bg-white border-b border-primary/20 p-3 focus:outline-none focus:border-accent text-primary transition-colors placeholder:text-primary/30 rounded-t-md" placeholder="" dir="ltr" />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <label className="text-xs font-medium uppercase tracking-wider text-primary/60 mb-2">מספר טלפון</label>
+                <input type="tel" name="phone" className="bg-white border-b border-primary/20 p-3 focus:outline-none focus:border-accent text-primary transition-colors placeholder:text-primary/30 rounded-t-md" placeholder="" dir="ltr" />
+              </div>
+              <div className="flex flex-col">
+                <label className="text-xs font-medium uppercase tracking-wider text-primary/60 mb-2">הודעה</label>
+                <textarea name="message" required rows="4" className="bg-white border-b border-primary/20 p-3 focus:outline-none focus:border-accent text-primary transition-colors resize-none placeholder:text-primary/30 rounded-t-md" placeholder="ספרו לי על הויז׳ן שלכם!"></textarea>
+              </div>
+
+              <button
+                type="submit"
+                disabled={cooldown > 0 || status === 'submitting'}
+                className={`w-full py-4 rounded-xl font-medium tracking-wide flex justify-center items-center gap-2 transition-colors ${cooldown > 0 || status === 'submitting'
+                  ? 'bg-primary/50 cursor-not-allowed text-white/50'
+                  : 'magnetic-btn bg-primary text-white hover:bg-black'
+                  }`}
+              >
+                {status === 'submitting' && 'שולח...'}
+                {status === 'success' && 'נשלח בהצלחה! תודה'}
+                {status === 'error' && 'שגיאה. נסה/י שוב'}
+                {status === 'idle' && cooldown > 0 && `המתן ${cooldown} שניות`}
+                {status === 'idle' && cooldown === 0 && (
+                  <>שליחה <ArrowUpLeft className="w-4 h-4" /></>
+                )}
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -483,9 +509,15 @@ function Contact() {
 // --- H. FOOTER ---
 function Footer() {
   return (
-    <footer className="bg-primary text-white pt-24 pb-8 px-6 md:px-12 rounded-t-[4rem] mx-auto w-full max-w-[100vw]">
-      <div>
-        <p>&copy; {new Date().getFullYear()} קארין גרבר צילום. כל הזכויות שמורות.</p>
+    <footer className="bg-primary text-white pt-24 pb-12 px-6 md:px-12 rounded-t-[4rem] mx-auto w-full max-w-[100vw]">
+      <div className="flex flex-col items-center justify-center gap-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl md:text-5xl tracking-[0.15em] text-white/90" dir="ltr" style={{ fontWeight: 300, fontFamily: "'Quicksand', sans-serif" }}>
+          Carine Photography
+        </h2>
+        <div className="w-12 h-[1px] bg-white/20 my-2"></div>
+        <p className="text-white/50 tracking-wider text-sm font-light">
+          &copy; {new Date().getFullYear()}כל הזכויות שמורות.
+        </p>
       </div>
     </footer>
   );
