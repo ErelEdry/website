@@ -16,7 +16,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 rounded-full px-6 md:px-8 py-4 flex items-center justify-between shadow-2xl w-[95%] md:w-[850px] lg:w-[1000px] ${scrolled ? 'bg-surface/70 backdrop-blur-xl border border-primary/10' : 'bg-transparent text-white border border-white/20'}`} dir="ltr">
+    <header className={`fixed top-2 md:top-6 left-0 right-0 mx-auto z-[999] transition-all duration-500 rounded-full px-6 md:px-8 py-3 md:py-4 flex items-center justify-between shadow-2xl w-[95%] md:w-[850px] lg:w-[1000px] ${scrolled ? 'bg-surface/90 backdrop-blur-xl border border-primary/10' : 'bg-transparent text-white border border-white/20'}`} dir="ltr">
       {/* LEFT: Brand */}
       <h1 className={`font-serif italic font-bold text-xl tracking-wide shrink-0 z-10 ${scrolled ? 'text-primary' : 'text-white'}`}>
         Carine Garber
@@ -70,7 +70,7 @@ function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="/images/photos/3D7CC93A-3B55-45F6-803B-671B6D86A3BE.PNG"
+          src="./images/photos/3D7CC93A-3B55-45F6-803B-671B6D86A3BE.PNG"
           alt="High-End Editorial Fashion"
           className="w-full h-full object-cover object-[center_25%]"
         />
@@ -128,7 +128,7 @@ function Features({ setSelectedImage }) {
   return (
     <section id="about" ref={containerRef} className="pt-32 pb-4 px-1 md:px-12 lg:px-24 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-32 relative rounded-[2rem] md:rounded-[3rem] p-8 md:p-16 overflow-hidden bg-pink-50 flex flex-col md:flex-row items-center justify-between gap-12 group shadow-[inset_0_0_0_1px_rgba(255,255,255,0.7)]">
+        <div className="mb-32 relative rounded-[2rem] md:rounded-[3rem] p-8 md:p-16 overflow-hidden bg-[#FFF0F5] flex flex-col md:flex-row items-center justify-between gap-12 group shadow-[inset_0_0_0_1px_rgba(255,255,255,0.7)]">
           {/* Background Atmospheric Elements & Sparkling Lights */}
           <div className="absolute top-0 right-0 w-72 h-72 bg-yellow-200/30 blur-[80px] rounded-full pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-300/30 blur-[100px] rounded-full pointer-events-none"></div>
@@ -151,7 +151,7 @@ function Features({ setSelectedImage }) {
 
           {/* Right Side (Visual Right in RTL = First child in flex-row) */}
           <div className="relative z-10 w-full md:w-[55%]">
-            <div className="bg-[#FAF8F5]/95 backdrop-blur-md p-8 md:p-12 shadow-[0_12px_40px_rgba(0,0,0,0.05)] rounded-sm border border-[#EAE3D2]/80 relative overflow-hidden transition-transform duration-700 hover:-translate-y-1">
+            <div className="bg-[#FFF0F5]/80 backdrop-blur-md p-8 md:p-12 shadow-[0_12px_40px_rgba(0,0,0,0.05)] rounded-sm border border-white/50 relative overflow-hidden transition-transform duration-700 hover:-translate-y-1">
               {/* Parchment Texture Noise */}
               <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E')" }}></div>
 
@@ -160,19 +160,16 @@ function Features({ setSelectedImage }) {
                   className="text-3xl md:text-5xl font-bold text-[#3A3A3A] mb-8 relative inline-block"
                   style={{ fontFamily: 'Calibri, sans-serif' }}
                 >
-                  קצת עליי
+                  About me
                   <span className="absolute -bottom-3 right-0 w-2/3 h-[1px] bg-gradient-to-l from-[#3A3A3A] to-transparent opacity-30"></span>
                 </h2>
                 <div className="space-y-6 text-[#5A5A5A] text-lg font-light leading-relaxed">
                   <p>
-                    היייי כולם<br />
-                    אני קארין גרבר<br />
-                    אוהבת ומעריכה (ואף יש שיגידו מכורה) לצילום ואופנה<br />
-                    עוד מאז שלמדתי ללכת
-                  </p>
-                  <p>
-                    עם הזמן הבנתי שאני חייבת לממש את התשוקה הזו ולחבר בין שני העולמות
-                  </p>
+                    אני קארין גרבר, צלמת אופנה ותדמית!<br />
+                    אני עובדת עם אנשים, מותגים ועסקים שרוצים להקפיץ את התוכן שלהם :) <br />
+                    <br />
+                    מאז ומתמיד נשמתי צילום ואופנה. הבנתי שהייעוד שלי הוא לקחת את שתי האהבות הגדולות האלו ולחבר ביניהן כדי לתעד את הרגעים היפים ביותר שלכם דרך העדשה!                  </p>
+
                   <p className="font-medium text-[#2C2C2C] text-xl pt-2">
                     ובדיוק כאן - אתם נכנסים לתמונה
                   </p>
@@ -185,7 +182,7 @@ function Features({ setSelectedImage }) {
           <div className="relative z-10 w-full md:w-[40%] flex justify-center mt-12 md:mt-0">
             <div className="bg-[#ebd9bd] p-3 shadow-2xl aspect-[4/5] md:aspect-square w-full max-w-[340px] transform -rotate-3 hover:-rotate-1 transition-transform duration-700 pointer-events-none">
               <img
-                src="/images/photos/IMG_4551.JPG"
+                src="./images/photos/IMG_4551.JPG"
                 alt="Carine Garber Portrait"
                 className="w-full h-full object-cover filter contrast-[1.02] brightness-95 pointer-events-auto"
               />
@@ -243,20 +240,20 @@ function TabbedGallery() {
     {
       id: 0,
       title: 'צילומי אופנה וקונספט למותג',
-      thumb: '/images/photos/IMG_1740.JPG',
-      image: '/images/photos/IMG_1740.JPG'
+      thumb: './images/photos/IMG_1740.JPG',
+      image: './images/photos/IMG_1740.JPG'
     },
     {
       id: 1,
       title: 'צילומי תדמית/בוק שחקן',
-      thumb: '/images/photos/IMG_8551.JPG',
-      image: '/images/photos/IMG_8551.JPG'
+      thumb: './images/photos/IMG_8551.JPG',
+      image: './images/photos/IMG_8551.JPG'
     },
     {
       id: 2,
       title: 'צילומי תוכן לרשתות ולקמפיינים',
-      thumb: '/images/photos/unnamed.jpg',
-      image: '/images/photos/unnamed.jpg'
+      thumb: './images/photos/unnamed.jpg',
+      image: './images/photos/unnamed.jpg'
 
     }
   ];
@@ -323,30 +320,30 @@ function TabbedGallery() {
 // --- F. PORTFOLIO GRID ---
 function Portfolio({ setSelectedImage }) {
   const images = [
-    "/images/photos/9548CFE2-FD5E-4580-AE84-ACDCCBE35FA2.JPEG",
-    "/images/photos/A2A54CB2-5FE1-43F0-B38A-CBE0F71CD601.jpeg",
-    "/images/photos/IMG_2109.JPG",
-    "/images/photos/2C8751F7-E1A0-46E3-9AA7-0CE24D3C09E7.JPEG",
-    "/images/photos/WhatsApp Image 2026-03-23 at 19.53.46.jpeg",
-    "/images/photos/985DBE58-9B07-47A1-90B0-986D87B32EE5.JPEG",
-    "/images/photos/D3938F98-5E9D-4FF6-A9AA-7226623ADB48.JPG",
-    "/images/photos/C472C53E-88F5-4AF9-B9B5-9E5F4B2B72F5.JPEG",
-    "/images/photos/DSC_0276.JPG",
-    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.36 (1).jpeg",
-    "/images/photos/IMG_7562.JPG",
-    "/images/photos/IMG_8724.JPG",
-    "/images/photos/627B09CA-1AFD-4665-96FF-76C52347B2A0.JPEG",
-    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.38 (2).jpeg",
-    "/images/photos/537EC874-78AA-47F4-9BF6-4BFF0D59788D.jpeg",
-    "/images/photos/IMG_1721.JPG",
-    "/images/photos/IMG_4610.JPG",
-    "/images/photos/IMG_4370.JPG",
-    "/images/photos/IMG_9722.JPG",
-    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.37.jpeg",
-    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (1).jpeg",
-    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (2).jpeg",
-    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.36.jpeg",
-    "/images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (5).jpeg",
+    "./images/photos/9548CFE2-FD5E-4580-AE84-ACDCCBE35FA2.JPEG",//1
+    "./images/photos/A2A54CB2-5FE1-43F0-B38A-CBE0F71CD601.jpeg",//2
+    "./images/photos/IMG_2109.JPG",//3
+    "./images/photos/2C8751F7-E1A0-46E3-9AA7-0CE24D3C09E7.JPEG",//4
+    "./images/photos/WhatsApp Image 2026-03-23 at 19.36.36.jpeg",//5
+    "./images/photos/WhatsApp Image 2026-03-23 at 19.36.36 (1).jpeg",//6
+    "./images/photos/IMG_1721.JPG",//16
+    "./images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (2).jpeg",//22
+    "./images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (1).jpeg",//21
+    "./images/photos/IMG_8724.JPG",//12
+    "./images/photos/WhatsApp Image 2026-03-23 at 19.53.46.jpeg",//5
+    "./images/photos/985DBE58-9B07-47A1-90B0-986D87B32EE5.JPEG",//6
+    "./images/photos/IMG_9722.JPG",//19
+    "./images/photos/IMG_7562.JPG",//11
+    "./images/photos/D3938F98-5E9D-4FF6-A9AA-7226623ADB48.JPG",//7
+    "./images/photos/WhatsApp Image 2026-03-23 at 19.36.37 (5).jpeg",//24
+    "./images/photos/627B09CA-1AFD-4665-96FF-76C52347B2A0.JPEG",//13
+    "./images/photos/WhatsApp Image 2026-03-23 at 19.36.37.jpeg",//20
+    "./images/photos/IMG_4370.JPG", //18
+    "./images/photos/WhatsApp Image 2026-03-23 at 19.36.38 (2).jpeg",//14
+    "./images/photos/537EC874-78AA-47F4-9BF6-4BFF0D59788D.jpeg",
+    "./images/photos/DSC_0276.JPG",//9 
+    "./images/photos/C472C53E-88F5-4AF9-B9B5-9E5F4B2B72F5.JPEG",//8
+    "./images/photos/IMG_4610.JPG", //17
 
   ];
 
@@ -398,7 +395,7 @@ function Contact() {
 
     setStatus('submitting');
 
-    fetch('https://formsubmit.co/ajax/carinegarber2005@gmail.com', {
+    fetch('https://formsubmit.co/ajax/Carineg.photography@gmail.com', {
       method: 'POST',
       body: formData,
     })
@@ -434,7 +431,7 @@ function Contact() {
             <div className="space-y-6 mb-12 w-full flex flex-col items-center md:items-start">
               <div className="flex items-center gap-4 text-primary/80">
                 <Mail className="w-6 h-6 text-accent" />
-                <span className="font-mono text-base">carinegarber2005@gmail.com</span>
+                <span className="font-mono text-base">carineg.photography@gmail.com</span>
               </div>
               <div className="flex items-center gap-4 text-primary/80">
                 <Phone className="w-6 h-6 text-accent" />
